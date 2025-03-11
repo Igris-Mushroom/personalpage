@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/jpeg" href="pics/pawn.jpg">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 8px);
+            padding: 10px;
+            gap: 5px;
+            background-color: black;
+        }
+
+        .header {
+            display: flex;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        .leftgroup {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 50%;
+        }
+
+        .rightgroup {
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            width: 50%;
+            justify-content: flex-end;
+        }
+
+        .rightgroup a {
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bolder;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+
+        .rightgroup a:hover {
+            background-color: wheat;
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: flex;
+            gap: 5px;
+        }
+
+        .leftbody {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .pic1 {
+            border-radius: 40%;
+            object-fit: cover;
+        }
+
+        .rightbody {
+            display: flex;
+            border: 1px solid black;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .rightbody h1,
+        .rightbody h3,
+        p {
+            margin: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="leftgroup"></div>
+
+        <div class="rightgroup">
+            <a href="index.html" class="home" target="_self" title="Home Page">Home</a>
+            <a href="Myself.html" target="_self" title="Know more about me!">Myself</a>
+            <a href="SchoolActivities.html" target="_self" title="School is Fun">School Activities</a>
+            <a href="Contact.html" target="_self" title="Contact Me Through">Contacts</a>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid white; width: 100%; background-color: white;">
+
+    <div class="container">
+        <div class="leftbody">
+            <img src="ax.jpg" alt="A picture of A.X. Cabillo" width="277" height="581" class="pic1">
+        </div>
+
+        <div class="rightbody">
+            <h1>Hi, I'm <span>XyXy</span></h1>
+            <h3 class="typing-text">A BSIT student of EVSU-OCC</h3>
+            <p>This page is about my experiences as a college student, all the fun and hardships</p>
+            <div class="social-icons">
+
+            </div>
+        </div>
+
+</body>
+
+</html>

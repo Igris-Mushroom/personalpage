@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Activities</title>
+    <link rel="icon" type="image/jpeg" href="pics/pawn.jpg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 8px);
+            padding: 10px;
+            gap: 5px;
+            background-color: black;
+        }
+
+        .header {
+            display: flex;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        .leftgroup {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 50%;
+        }
+
+        .rightgroup {
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            width: 50%;
+            justify-content: flex-end;
+        }
+
+        .rightgroup a {
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bolder;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .rightgroup a:hover {
+            background-color: wheat;
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .box1left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            width: 50%;
+        }
+
+        .box1right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            padding: 25px;
+        }
+
+        h1,
+        h3,
+        p {
+            color: white;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .box2left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+        }
+
+        .box2right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            width: 50%;
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .box3left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            width: 50%;
+        }
+
+        .box3right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            padding: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="leftgroup"></div>
+
+        <div class="rightgroup">
+            <a href="index.html" class="home" target="_self" title="Home Page">Home</a>
+            <a href="Myself.html" target="_self" title="Know more about me!">Myself</a>
+            <a href="SchoolActivities.html" target="_self" title="School is Fun">School Activities</a>
+            <a href="Contact.html" target="_self" title="Contact Me Through">Contacts</a>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid white; width: 100%; background-color: white;">
+
+    <div class="container">
+
+        <div class="box1">
+
+            <div class="box1left">
+                <div class="things">
+                    <h3>USWAG 2024-2025</h3>
+                </div>
+                <img src="uswag1.jpg" width="70%">
+            </div>
+
+            <div class="box1right">
+                <p>
+                    I've joined the Computer Studies Department in the Yell Competition between departments of EVSU-OCC
+                </p>
+            </div>
+        </div>
+
+
+        <div class="box2">
+            <div class="box2left">
+                <p>
+                    Currently training, Class 2024-2025 534th Naval Reserve Officer Training Corps Unit
+                </p>
+            </div>
+
+            <div class="box2right">
+                <h3>NSTP-ROTC</h3>
+                <img src="rotc1.jpg" width="70%">
+            </div>
+        </div>
+
+        <div class="box3">
+
+            <div class="box3left">
+                <div class="things">
+                    <h3>Final Output for PATHFIT</h3>
+                </div>
+                <img src="pe.jpg" width="70%">
+            </div>
+
+            <div class="box3right">
+                <p>
+                    The final subject requirement of PATHFIT is to perform an Aerobic Dance <br> (BSIT-1C 1st Semester
+                    SY
+                    2024-2025)
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
