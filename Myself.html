@@ -1,274 +1,274 @@
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Myself</title>
-        <link rel="icon" type="image/jpeg" href="pawn.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myself</title>
+    <link rel="icon" type="image/jpeg" href="pawn.png">
 
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-            body {
-                display: flex;
-                flex-direction: column;
-                height: calc(100vh - 8px);
-                padding: 10px;
-                gap: 5px;
-                background-color: black;
-            }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 8px);
+            padding: 10px;
+            gap: 5px;
+            background-color: black;
+        }
 
-            .header {
-                display: flex;
-                border: 1px solid black;
-                padding: 10px;
-                background-color: black;
-                justify-content: space-between;
-            }
+        .header {
+            display: flex;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: black;
+            justify-content: space-between;
+        }
 
-            .leftgroup {
-                display: flex;
-                align-items: center;
-                gap: 4px;
-                width: 50%;
-            }
+        .leftgroup {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 50%;
+        }
 
-            .rightgroup {
-                display: flex;
-                align-items: center;
-                gap: 10%;
-                width: 50%;
-                justify-content: flex-end;
-            }
+        .rightgroup {
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            width: 50%;
+            justify-content: flex-end;
+        }
 
-            .rightgroup a {
-                background-color: black;
-                padding: 5px 10px;
-                border-radius: 5px;
-                color: white;
-                font-size: 18px;
-                text-decoration: none;
-                font-weight: bolder;
-                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-                transition: background-color 0.3s, transform 0.3s;
-            }
+        .rightgroup a {
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bolder;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
 
-            .rightgroup a:hover {
-                background-color: wheat;
-                transform: scale(1.05);
-            }
+        .rightgroup a:hover {
+            background-color: wheat;
+            transform: scale(1.05);
+        }
 
-            .container {
-                display: flex;
-                flex-grow: 1;
-                flex-direction: column;
-                gap: 25px;
-            }
+        .container {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 25px;
+        }
 
-            h1 {
-                display: flex;
-                justify-content: center;
-            }
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
 
-            .box1 {
-                display: flex;
-                flex-direction: row;
-                padding: 10px;
-                align-items: center;
-                gap: 25px;
-            }
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
 
-            .box1left {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                padding: 25px;
-                width: 50%;
-            }
+        .box1left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            width: 50%;
+        }
 
-            .box1right {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                width: 50%;
-                padding: 25px;
-            }
+        .box1right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            padding: 25px;
+        }
 
-            h1,
-            h3,
-            p {
-                color: white;
-            }
+        h1,
+        h3,
+        p {
+            color: white;
+        }
 
-            .box2 {
-                display: flex;
-                flex-direction: row;
-                padding: 10px;
-                align-items: center;
-                gap: 25px;
-            }
+        .box2 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
 
-            .box2left {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                flex-grow: 1;
-            }
+        .box2left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+        }
 
-            .box2right {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                padding: 25px;
-                padding-right: 100px;
-            }
+        .box2right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            padding-right: 100px;
+        }
 
-            .fcolor {
-                background-color: maroon;
-                width: 300px;
-                height: 300px;
-            }
+        .fcolor {
+            background-color: maroon;
+            width: 300px;
+            height: 300px;
+        }
 
-            .box2left a:hover {
-                background-color: wheat;
-                transform: scale(1.05);
-            }
+        .box2left a:hover {
+            background-color: wheat;
+            transform: scale(1.05);
+        }
 
-            .box3 {
-                display: flex;
-                flex-direction: row;
-                padding: 10px;
-                align-items: center;
-                gap: 25px;
-            }
+        .box3 {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            gap: 25px;
+        }
 
-            .box3left {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                flex-grow: 1;
-                padding: 150px;
-            }
+        .box3left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+            padding: 150px;
+        }
 
-            .box3right {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                padding: 25px;
-                padding-right: 100px;
-                width: 50%;
-            }
-        </style>
+        .box3right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            padding-right: 100px;
+            width: 50%;
+        }
+    </style>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="header">
-            <div class="leftgroup"></div>
+    <div class="header">
+        <div class="leftgroup"></div>
 
-            <div class="rightgroup">
-                <a href="index.html" class="home" target="_self" title="Home Page">Home</a>
-                <a href="Myself.html" target="_self" title="Know more about me!">Myself</a>
-                <a href="SchoolActivities.html" target="_self" title="School is Fun">School Activities</a>
-                <a href="Contact.html" target="_self" title="Contact Me Through">Contacts</a>
+        <div class="rightgroup">
+            <a href="index.html" class="home" target="_self" title="Home Page">Home</a>
+            <a href="Myself.html" target="_self" title="Know more about me!">Myself</a>
+            <a href="SchoolActivities.html" target="_self" title="School is Fun">School Activities</a>
+            <a href="Contact.html" target="_self" title="Contact Me Through">Contacts</a>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid white; width: 100%; background-color: white;">
+
+    <div class="container">
+        <br><br>
+
+        <h1>What I Like!</h1>
+
+        <br><br>
+
+        <div class="box1">
+
+            <div class="box1left">
+                <h3>Music</h3>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                </a>
+            </div>
+
+            <div class="box1right">
+                <p>
+                    I wanna be your vacuum cleaner
+                    Breathing in your dust
+                    I wanna be your Ford Cortina
+                    I will never rust
+                    If you like your coffee hot
+                    Let me be your coffee pot
+                    You call the shots, babe
+                    I just wanna be yours
+                    Secrets I have held in my heart
+                    Are harder to hide than I thought
+                    Maybe I just wanna be yours
+                    I wanna be yours, I wanna be yours
+                    Wanna be yours
+                    Wanna be yours
+                    Wanna be yours
+                </p>
             </div>
         </div>
 
-        <hr style="border: 1px solid white; width: 100%; background-color: white;">
 
-        <div class="container">
-            <br><br>
-
-            <h1>What I Like!</h1>
-
-            <br><br>
-
-            <div class="box1">
-
-                <div class="box1left">
-                    <h3>Music</h3>
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                    </a>
-                </div>
-
-                <div class="box1right">
-                    <p>
-                        I wanna be your vacuum cleaner
-                        Breathing in your dust
-                        I wanna be your Ford Cortina
-                        I will never rust
-                        If you like your coffee hot
-                        Let me be your coffee pot
-                        You call the shots, babe
-                        I just wanna be yours
-                        Secrets I have held in my heart
-                        Are harder to hide than I thought
-                        Maybe I just wanna be yours
-                        I wanna be yours, I wanna be yours
-                        Wanna be yours
-                        Wanna be yours
-                        Wanna be yours
-                    </p>
-                </div>
+        <div class="box2">
+            <div class="box2left">
+                <p>
+                    Why do I like this color? Let me show you!
+                </p>
             </div>
 
+            <div class="box2right">
+                <h3>Color</h3>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/63oAGWnHBRKyoLG15VKPvB?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
 
-            <div class="box2">
-                <div class="box2left">
-                    <p>
-                        Why do I like this color? Let me show you!
-                    </p>
-                </div>
+        <div class="box3">
 
-                <div class="box2right">
-                    <h3>Color</h3>
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/playlist/63oAGWnHBRKyoLG15VKPvB?utm_source=generator"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </div>
+            <div class="box3left">
+                <h3>Omen</h3>
+                <div class="tenor-gif-embed" data-postid="10148611916060344658" data-share-method="host"
+                    data-aspect-ratio="1" data-width="100%"><a
+                        href="https://tenor.com/view/valorant-omen-cat-dance-omen-cat-dance-gif-10148611916060344658">Valorant
+                        Omen Cat Dance Sticker</a>from <a href="https://tenor.com/search/valorant-stickers">Valorant
+                        Stickers</a></div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
             </div>
 
-            <div class="box3">
+            <div class="box3right">
+                <p>
 
-                <div class="box3left">
-                    <h3>Omen</h3>
-                    <div class="tenor-gif-embed" data-postid="10148611916060344658" data-share-method="host"
-                        data-aspect-ratio="1" data-width="100%"><a
-                            href="https://tenor.com/view/valorant-omen-cat-dance-omen-cat-dance-gif-10148611916060344658">Valorant
-                            Omen Cat Dance Sticker</a>from <a href="https://tenor.com/search/valorant-stickers">Valorant
-                            Stickers</a></div>
-                    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
-                </div>
-
-                <div class="box3right">
-                    <p>
-
-                    </p>
-                </div>
-
+                </p>
             </div>
 
         </div>
 
-    </body>
+    </div>
+
+</body>
 
 </php>
