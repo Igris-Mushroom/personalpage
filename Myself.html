@@ -59,7 +59,7 @@
         }
 
         .rightgroup a:hover {
-            background-color: wheat;
+            background-color: maroon;
             transform: scale(1.05);
         }
 
@@ -68,6 +68,8 @@
             flex-grow: 1;
             flex-direction: column;
             gap: 25px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(128, 0, 0, 0.8), rgba(139, 0, 0, 0.9));
+
         }
 
         h1 {
@@ -169,6 +171,55 @@
             padding-right: 100px;
             width: 50%;
         }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        .box1 {
+            animation-name: slideInFromLeft;
+        }
+
+        .box2 {
+            animation-name: slideInFromRight;
+        }
+
+        .box3 {
+            animation-name: slideInFromLeft;
+        }
+
+        .box4 {
+            animation-name: slideInFromRight;
+        }
+
+        .leftgroup h1 {
+            color: white;
+            font-size: 50px;
+        }
     </style>
 
 </head>
@@ -176,7 +227,9 @@
 <body>
 
     <div class="header">
-        <div class="leftgroup"></div>
+        <div class="leftgroup">
+            <h1>About Myself</h1>
+        </div>
 
         <div class="rightgroup">
             <a href="index.html" class="home" target="_self" title="Home Page">Home</a>
@@ -261,7 +314,7 @@
 
             <div class="box3right">
                 <p>
-
+                    I've recently started playing Valorant, one of my favorite agents is Omen
                 </p>
             </div>
 
